@@ -32,7 +32,6 @@ namespace dotnetcore_send_email
                 .To("ali.veli@aaa.com", "Ali Veli")
                 .Subject("Tebrikler!")
                 .UsingTemplate(template.ToString(), new { Fullname = "Ali Veli", Product = "Apple Macbook 13"}, true)
-                //.Body("This is a test, beach!")
                 .SendAsync();
 
             if (email.Successful == false)
