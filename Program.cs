@@ -34,10 +34,10 @@ namespace dotnetcore_send_email
                 .UsingTemplate(template.ToString(), new { Fullname = "Ali Veli", Product = "Apple Macbook 13"}, true)
                 .SendAsync();
 
-            if (email.Successful == false)
-                Console.WriteLine("Eposta gönderilemedi, bir hata oluştu.");
-            else
+            if (email.Successful)
                 Console.WriteLine("Eposta gönderimi başarılı.");
+            else
+                Console.WriteLine("Eposta gönderilemedi, bir hata oluştu.");
         }
     }
 }
