@@ -1,2 +1,2 @@
 # dotnetcore-send-email
-localhost'a email gönderimi, FluentEmail.SMTP ve FluentEmail.Razor kullanıldı.
+localhost'a email gönderimi, FluentEmail.SMTP, FluentEmail.Razor ve  Papercut SMTP kullanıldı.
